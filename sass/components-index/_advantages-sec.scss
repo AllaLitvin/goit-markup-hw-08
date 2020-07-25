@@ -1,0 +1,42 @@
+/*advantages options*/
+.features {
+  padding-bottom: 0px;
+}
+
+.advantages {
+  display: flex;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  justify-content: space-between;
+  font-family: $font-family;
+  color: $very-dark-grey-color;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02px;
+
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
+}
+
+.details {
+  width: 270px;
+  display: block;
+  padding-right: 30px;
+
+  &:last-child {
+    padding-right: 0px;
+  }
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}

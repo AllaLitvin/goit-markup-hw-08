@@ -1,0 +1,177 @@
+/*footer */
+
+.footer {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03px;
+  color: $white;
+  background-color: #2f303a;
+
+  .container {
+    display: flex;
+    justify-content: stretch;
+    align-items: baseline;
+  }
+}
+
+.contact-footer {
+  display: block;
+  margin-left: 0px;
+  padding-bottom: 28px;
+  font-style: normal;
+}
+
+.address-footer {
+  display: block;
+  margin-top: 20px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.addresses-details {
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.addresses {
+  display: block;
+  padding-bottom: 0px;
+  margin-top: 0px;
+
+  a {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    line-height: 24px;
+  }
+}
+
+/*join us*/
+
+.info {
+  display: block;
+  padding-left: 59px;
+}
+
+.join {
+  display: block;
+  padding-top: 45px;
+  margin: 0px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.reference a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition: $transition;
+
+  &:hover {
+    background-color: $blue;
+    transition: $transition;
+  }
+}
+
+.reference-icon {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+}
+
+/*subscribe */
+
+.distribution {
+  display: flex;
+  padding-left: 94px;
+  padding-top: 45px;
+  margin: 0px;
+}
+
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+.email {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+
+.subscribe {
+  display: block;
+  padding-bottom: 20px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03px;
+  color: white;
+}
+.button-footer {
+  display: inline-flex;
+  margin-top: 44px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0px;
+  background: $blue;
+  color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/*copirate footer*/
+.developed {
+  display: block;
+  align-self: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.copirate {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

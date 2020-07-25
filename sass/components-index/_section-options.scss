@@ -1,0 +1,40 @@
+/*common section options*/
+.section {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-items: center;
+  font-family: $font-family;
+  font-style: normal;
+
+  &-title {
+    margin: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03px;
+    color: $very-dark-grey-color;
+  }
+
+  &-item {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03px;
+    color: $very-dark-grey-color;
+  }
+
+  &-text {
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03px;
+    color: $dark-grey-color;
+  }
+}
