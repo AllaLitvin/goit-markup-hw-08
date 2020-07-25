@@ -733,7 +733,7 @@
   padding-top: 94px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1139px) {
   .aboutcompany {
     display: none;
   }
