@@ -26,20 +26,29 @@
         </a>
 
         <!-- NAVIGATION -->
-        <nav class="container">
-          <ul class="site-nav list">
-            <li class="site-nav item">
-              <a href="index.html" class="link">Студия </a>
-            </li>
-            <li class="site-nav item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="site-nav item">
-              <a href="/контакты" class="link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
 
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./img/symbol-defs-non.svg#icon-close-black"></use>
+            <use class="icon-menu" href="./img/symbol-defs-non.svg#icon-menu"></use>
+          </svg>
+        </button>
+        
+        <nav class="container">
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="site-nav item">
+                <a href="index.html" class="link current"> Студия</a>
+              </li>
+              <li class="site-nav item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="site-nav item">
+                <a href="/контакты" class="link">Контакты</a>
+              </li>
+            </ul>
+        </nav>
+        
         <!--CONTACTS-->
         <div class="container">
           <ul class="contacts list">
@@ -60,6 +69,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </header>

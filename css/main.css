@@ -6,6 +6,24 @@
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1140px;
+  }
+}
+
 /*common section options*/
 .section {
   display: block;
@@ -275,11 +293,6 @@
 
 /* hero*/
 .hero {
-  display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -289,8 +302,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0px;
@@ -298,7 +309,6 @@
 }
 
 .hero-title {
-  display: block;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -306,21 +316,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  padding-top: 196px;
-  width: 646px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 44px;
-  line-height: 60px;
   letter-spacing: 0.06px;
   text-align: center;
 }
 
-/*modal*/
 .hero-buttom {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   padding: 10px 32px;
   color: #ffffff;
   font-size: 16px;
@@ -334,6 +336,67 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+  .hero-title {
+    padding-top: 118px;
+    width: 480px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-title {
+    display: block;
+    padding-top: 118px;
+    min-width: 480px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+  }
+  .hero-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .hero {
+    width: 1140px;
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-title {
+    display: block;
+    padding-top: 196px;
+    min-width: 646px;
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .hero-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+/*modal*/
 .button-close {
   display: block;
   position: absolute;
@@ -668,6 +731,12 @@
 /* about company*/
 .aboutcompany {
   padding-top: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .aboutcompany {
+    display: none;
+  }
 }
 
 a {

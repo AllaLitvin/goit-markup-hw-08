@@ -25,7 +25,32 @@
         </a>
 
         <!-- NAVIGATION -->
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./img/symbol-defs-non.svg#icon-close-black"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./img/symbol-defs-non.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
         <nav class="container">
+          <div class="menu-container" id="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="site-nav item">
               <a href="index.html" class="link current"> Студия</a>
@@ -59,6 +84,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </header>
@@ -521,26 +547,8 @@
         <p class="developed">2020 | Developed by GoIT Students</p>
       </div>
 
-      <script>
-        const refs = {
-          openModalBtn: document.querySelector("[data-open-modal]"),
-          closeModalBtn: document.querySelector("[data-close-modal]"),
-          backdrop: document.querySelector("[data-backdrop]"),
-        };
-
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-
-        refs.backdrop.addEventListener("click", logBackdropClick);
-
-        function toggleModal() {
-          refs.backdrop.classList.toggle("is-hidden");
-        }
-
-        function logBackdropClick() {
-          console.log("Это клик в бекдроп");
-        }
-      </script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/modal.js"></script>
     </footer>
   </body>
 </html>
