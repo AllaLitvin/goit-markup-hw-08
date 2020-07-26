@@ -18,7 +18,7 @@
   <body class="body">
     <!--HEAD-->
     <header class="page-header">
-      <div class="container main-nav">
+      <nav class="main-nav">
         <a href="index.html" class="logo">
           Web
           <span class="studio"> Studio </span>
@@ -26,11 +26,7 @@
 
         <!-- NAVIGATION -->
 
-        <button
-          type="button"
-          class="menu-button is-open"
-          data-menu-button
-         >
+        <button type="button" class="menu-button is-open" data-menu-button>
           <svg
             width="40"
             height="40"
@@ -40,12 +36,18 @@
               class="icon-close"
               href="./img/symbol-defs-non.svg#icon-close-black"
             ></use>
-            <use class="icon-menu" href="./img/symbol-defs-non.svg#icon-menu"></use>
+            <use
+              class="icon-menu"
+              href="./img/symbol-defs-non.svg#icon-menu"
+            ></use>
           </svg>
         </button>
 
-        <nav class="container">
-          <div class="menu-container" id="menu-container" data-menu>
+        <!-- <div class="mobile-menu" >
+              <div class="content"></div>
+            </div> -->
+
+        <div class="menu-container is-open" id="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="site-nav item">
               <a href="index.html" class="link current"> Студия</a>
@@ -57,10 +59,8 @@
               <a href="/контакты" class="link">Контакты</a>
             </li>
           </ul>
-        </nav>
 
-        <!--CONTACTS-->
-        <div class="container">
+          <!--CONTACTS-->
           <ul class="contacts list">
             <li class="items">
               <a href="malito:info@devstudio.com">
@@ -80,8 +80,7 @@
             </li>
           </ul>
         </div>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <!--MAIN INFO-->
@@ -251,7 +250,11 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
             <li class="members">
-              <img src="img/tk1-min.jpg" alt="Николай Кучеренко"  width="290px"/>
+              <img
+                src="img/tk1-min.jpg"
+                alt="Николай Кучеренко"
+                width="290px"
+              />
               <h3 class="name">Николай Кучеренко</h3>
               <p class="position">Product Designer</p>
               <ul class="social list">

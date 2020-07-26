@@ -1,4 +1,10 @@
-/*navigation*/
+.page-header .main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
 
 .main-nav {
   display: flex;
@@ -22,8 +28,17 @@
   font-weight: 500;
   letter-spacing: 0.02px;
 
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
   .item {
     margin-right: 50px;
+
+    @media screen and (min-width: 320px) {
+      &:last-child {
+        margin-right: 50px;
+      }
+    }
     &:last-child {
       margin-right: 0px;
     }
