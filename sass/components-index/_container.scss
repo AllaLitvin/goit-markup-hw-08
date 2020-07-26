@@ -6,9 +6,18 @@
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0px auto 0px auto;
+  }
+
+  .container:nth-last-child(4) {
+    padding-bottom: 0px;
   }
 }
 

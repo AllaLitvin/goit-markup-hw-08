@@ -1,7 +1,7 @@
 /*main logo*/
 .logo {
   display: flex;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ralewey", sans-serif;
   font-weight: bold;
   letter-spacing: 0.03px;
   color: $blue;
@@ -13,6 +13,7 @@
   font-weight: bold;
   letter-spacing: 0.03px;
   margin-right: 85px;
+  padding-left: 2px;
 }
 
 .page-header .logo {

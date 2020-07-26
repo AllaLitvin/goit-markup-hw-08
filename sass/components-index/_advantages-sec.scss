@@ -1,11 +1,16 @@
 /*advantages options*/
 .features {
   padding-bottom: 0px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+  }
 }
 
 .advantages {
-  display: flex;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 0px;
   justify-content: space-between;
   font-family: $font-family;
@@ -15,6 +20,34 @@
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02px;
+
+  @media screen and (min-width: 768px) {
+    .details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 354px;
+      margin: -5px;
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    .details {
+      display: flex;
+      width: 270px;
+      margin: 10px;
+      margin-bottom: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    .details:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   &-image {
     display: flex;
@@ -27,9 +60,9 @@
 }
 
 .details {
-  width: 270px;
-  display: block;
-  padding-right: 30px;
+  /*width: 270px;
+  display: block;*/
+  /*padding-right: 30px;*/
 
   &:last-child {
     padding-right: 0px;
