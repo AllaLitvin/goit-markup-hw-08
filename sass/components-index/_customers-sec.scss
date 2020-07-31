@@ -4,6 +4,7 @@
   @media screen and (min-width: 320px) {
     padding-top: 0px;
     padding-bottom: 0px;
+    text-align: center;
   }
 
   .section-title {
@@ -19,12 +20,11 @@
   /*margin-top: 0px;*/
   margin-bottom: 0px;
   padding-left: 0px;
-  justify-content: space-between;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-    align-items: stretch;
     padding-left: 0;
+    text-align: center;
   }
 }
 
