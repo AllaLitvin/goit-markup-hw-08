@@ -11,214 +11,258 @@
   background-color: #2f303a;
 
   .container {
-    display: flex;
-    justify-content: stretch;
-    align-items: baseline;
-
     @media screen and (min-width: 320px) {
+      display: block;
       text-align: center;
       padding-top: 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: stretch;
+      align-items: baseline;
+    }
+  }
+
+  .contact-footer {
+    font-style: normal;
+    /* margin-left: 0px;
+      padding-bottom: 28px;*/
+
+    @media screen and (min-width: 320px) {
+      display: block;
+      flex-direction: column;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  .address-footer {
+    font-style: normal;
+    line-height: 24px;
+
+    @media screen and (min-width: 320px) {
+      display: block;
+      flex-direction: column;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-top: 20px;
+    }
+  }
+
+  .addresses-details {
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .addresses {
+    display: block;
+    padding-bottom: 0px;
+    margin-top: 0px;
+
+    a {
+      font-style: normal;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      line-height: 24px;
+    }
+  }
+
+  /*join us*/
+
+  .info {
+    @media screen and(min-width: 320px) {
+      display: block;
+      text-align: center;
+      align-items: center;
+    }
+
+    @media screen and(min-width: 768px) {
+      display: inline-block;
+      margin-left: 165px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    @media screen and(min-width: 1200px) {
+      display: block;
+      padding-left: 69px;
+    }
+
+    .join {
+      @media screen and(min-width: 320px) {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      @media screen and(min-width: 768px) {
+        display: inline-block;
+        margin-top: 0;
+      }
+
+      @media screen and(min-width: 1200px) {
+        display: inline-block;
+        padding-top: 45px;
+        margin: 0px;
+      }
+    }
+    .social-links {
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+      /*padding-top: 20px;*/
+      margin-bottom: 0px;
+      margin-top: 0px;
+
+      @media screen and(min-width: 320px) {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      @media screen and(min-width: 768px) {
+        display: flex;
+      }
+
+      .reference a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-right: 10px;
+        cursor: pointer;
+
+        transition-property: background-color;
+        transition: $transition;
+
+        &:hover {
+          background-color: $blue;
+          transition: $transition;
+        }
+      }
+    }
+
+    .reference-icon {
+      width: 20px;
+      height: 20px;
+      fill: $white;
+    }
+  }
+
+  /*subscribe */
+
+  .distribution {
+    padding-top: 60px;
+    margin: 0px;
+
+    @media screen and (min-width: 320px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+      align-items: center;
+      padding-left: 186px;
+      padding-right: 152px;
+    }
+    @media screen and (min-width: 1200px) {
       display: block;
     }
   }
-}
 
-.contact-footer {
-  display: block;
-  /*margin-left: 0px;
-  padding-bottom: 28px;*/
-  font-style: normal;
-
-  @media screen and (min-width: 320px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-.address-footer {
-  display: block;
-  margin-top: 20px;
-  font-style: normal;
-  line-height: 24px;
-}
-
-.addresses-details {
-  padding-bottom: 0px;
-  margin-top: 0px;
-}
-
-.addresses {
-  display: block;
-  padding-bottom: 0px;
-  margin-top: 0px;
-
-  a {
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    line-height: 24px;
-  }
-}
-
-/*join us*/
-
-.info {
-  display: block;
-  /*padding-left: 59px;*/
-
-  @media screen and(min-width: 320px) {
-    text-align: center;
-    align-items: center;
-  }
-}
-
-.join {
-  display: block;
-  /*padding-top: 45px;*/
-  /*margin: 0px;*/
-
-  @media screen and(min-width: 320px) {
-    text-align: center;
-    margin-top: 60px;
-  }
-}
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0px;
-  /*padding-top: 20px;*/
-  margin-bottom: 0px;
-  margin-top: 0px;
-
-  @media screen and(min-width: 320px) {
+  .form-subscribe {
     display: flex;
-    margin-top: 20px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin: 0px;
   }
 
-  .reference a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    cursor: pointer;
+  .email {
+    height: 50px;
+    padding-left: 16px;
 
-    transition-property: background-color;
-    transition: $transition;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #2f303a;
 
-    &:hover {
-      background-color: $blue;
-      transition: $transition;
+    @media screen and (min-width: 320px) {
+      min-width: 358px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-right: 12px;
     }
   }
-}
 
-.reference-icon {
-  width: 20px;
-  height: 20px;
-  fill: $white;
-}
+  .subscribe {
+    display: block;
+    padding-bottom: 20px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03px;
+    color: white;
 
-/*subscribe */
-
-.distribution {
-  /*display: flex;
-  padding-left: 94px;*/
-  padding-top: 45px;
-  margin: 0px;
-
-  @media screen and (min-width: 320px) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
+    @media screen and (min-width: 320px) {
+      text-align: center;
+    }
   }
-}
-
-.form-subscribe {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  margin: 0px;
-}
-
-.email {
-  /*display: block;
-  /*width: 358px;*/
-  height: 50px;
-  padding-left: 16px;
-  /*margin-right: 12px;*/
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: #2f303a;
-
-  @media screen and (min-width: 320px) {
-    min-width: 285px;
-  }
-}
-
-.subscribe {
-  display: block;
-  padding-bottom: 20px;
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03px;
-  color: white;
-
-  @media screen and (min-width: 320px) {
+  .button-footer {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    border: 0px;
+    background: $blue;
+    color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    @media screen and (min-width: 320px) {
+      align-self: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 44px;
+    }
   }
-}
-.button-footer {
-  display: inline-flex;
-  /*margin-top: 44px;*/
-  width: 200px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 0px;
-  background: $blue;
-  color: $white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 
-  @media screen and (min-width: 320px) {
-    align-self: center;
+  .button-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
   }
-}
-
-.button-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-}
-
-/*copirate footer*/
-.developed {
-  display: block;
-  align-self: center;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  margin: auto;
-
-  font-size: 12px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.copirate {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

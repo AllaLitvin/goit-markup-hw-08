@@ -5,7 +5,7 @@
   margin-bottom: 0px;
   margin-left: auto;
   text-decoration: none;
-  font-size: 14px;
+  /*font-size: 14px;*/
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02px;
@@ -15,18 +15,25 @@
     padding-left: 0;
     padding-bottom: 16px;
     margin-left: auto;
-  }
+    font-size: 18px;
+    line-height: 21px;
 
-  .items:last-child {
-    margin-right: 0px;
+    .items:last-child {
+      margin-right: 0px;
+    }
   }
 
   @media screen and (min-width: 768px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 0;
-    padding-bottom: 16px;
-    margin-left: 84px;
-    margin-right: 0;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: flex-start;
+    justify-items: center;
   }
 }
 
@@ -47,6 +54,11 @@
     padding-bottom: 16px;
   }
 
+  @media screen and (min-width: 768px) {
+    justify-items: center;
+    padding-bottom: 10px;
+  }
+
   &:hover,
   &:focus {
     color: $blue;
@@ -54,8 +66,8 @@
 
   .contacts-icon {
     display: flex;
-    align-items: center;
-    margin-right: 10px;
+    align-items: flex-start;
+    margin-right: 8px;
     fill: currentColor;
 
     &:hover {
@@ -69,6 +81,6 @@
   height: 11px;
 }
 .letter {
-  width: 20px;
+  width: 16px;
   height: 12px;
 }

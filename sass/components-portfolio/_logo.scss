@@ -1,0 +1,63 @@
+/*main logo*/
+
+.main-logo {
+  @media screen and (min-width) {
+    min-width: {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      padding-right: 0;
+      margin-right: 81px;
+    }
+  }
+
+  .logo {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.03px;
+    color: $blue;
+    text-decoration: none;
+  }
+
+  .studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.03px;
+    /*margin-right: 85px;*/
+    padding-left: 5px;
+  }
+
+  .page-header .logo {
+    font-size: 26px;
+  }
+
+  .page-header .studio {
+    font-size: 26px;
+    line-height: 31px;
+    color: $black-color;
+  }
+}
+
+.second-logo {
+  @media screen and (min-width: 320px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+  }
+}
+
+.second-logo .logo {
+  font-size: 22px;
+}
+
+.second-logo.studio {
+  font-size: 22px;
+  color: $white;
+  text-decoration: none;
+}
